@@ -1,123 +1,253 @@
 <!doctype html>
-
-<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
-
 <html>
 
-<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
-
 	<head>
-		<title>Личная страница Веры Кузнецовой</title>
-	 	<!-- Required meta tags -->
+		<title>Личная страница Маши Самус</title>
 	 	<meta charset="utf-8">
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<meta name="description" content="Личная страница и контакты">
-
-		<!-- Bootstrap Core CSS -->
+		<meta name="description" content="Всё и ещё немного">
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
-
 	</head>
-	
-<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
 	<body>
-
-<!-- меню (navigation bar) -->
-
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-
-<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
-			<div class="container"> 
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background-color:#8fd6f3;">
+		  <div class="container">
 				<div class="navbar-header"> 
-					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+					<a href="https://ling.hse.ru/" class="navbar-brand" style="font-family:cursive">Школа лингвистики НИУ ВШЭ</a> 
 				</div> 
 				<nav class="collapse navbar-collapse" id="bs-navbar"> 
 					<ul class="nav navbar-nav navbar-right"> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
-<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+						<li style="font-family:cursive"> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2024/index.html">Страница курса</a> </li> 
+						<li style="font-family:cursive"> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2024/latin_1.html">Страница группы</a> </li> 
 					</ul>
 				</nav> 
 			</div>
 		</nav>
-
-<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
-
-		<header style="background-color:plum; padding-top:70px; "> 
+		<header style="background-color:#94e76e; padding-top:60px; "> 
 			<div class="container"> 
 				<div class="row">
-					<div class="col-md-4">
-						<br><br>
-<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Вера Кузнецова</h1>
-						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
+					<div class="col-md-3">
+					<img src="myphoto.jpg" style="width:250px; height:250px; margin:20px 20px 40px 20px">
 					</div>
-					<div class="col-md-4">
-<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
-<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Petrus_Christus_-_Portrait_of_a_Young_Woman_-_Google_Art_Project.jpg/368px-Petrus_Christus_-_Portrait_of_a_Young_Woman_-_Google_Art_Project.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
+					<div class="col-md-6">
+                        <h1 style="font-family:cursive">Меня зовут Маша Самус
+						</h1>
+						<h2 style="font-family:cursive">Ага, вот меня, слева или сверху.
+						</h2>
+						<p style="font-family:cursive">Да, это не самое свежее фото...</p>
+						<p style="font-family:cursive">Ну представьте, что волосы голубые.)</p>
+						<p style="font-family:cursive">Done.</p>
 					</div>
 				</div>
 			</div>
 		</header>
-
-<!-- часть страницы, которая под шапкой -->
-		<section id="portfolio">
+		<section id="facts">
 			<div class="container">
-
-<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
-				<div class="col-md-3">
-
-<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
-					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
-					</article>
-					<article>
-						<h3>Родной город</h3>
-						<p>Новосибирск</p>
-					</article>
-					<article>
-						<h3>Школа</h3>
-<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
-					</article>
+				<div class="col-md-4">
+					<details>
+						<summary> <h2 style="font-family:cursive"><b> &#10148;Что-то про учёбу</b></h2> </summary>
+						<p>
+						   <article>
+						     <h4 style="font-family:cursive"><u>Место учёбы</u></h4>
+							 <details>
+						     <summary><h5 style="font-family:cursive">&#9658;Любимый ФиКЛ, НИУ ВШЭ</h5></summary>
+							  <p>
+							   <article>
+							    <p style="font-family:cursive">Поступление на ФиКЛ было довольно волнительным.</p>
+								<p style="font-family:cursive">В начале 11 класса был простой, надежный план. Берешь диплом олимпиады и поступаешь в заветную вышку.</p>
+								<p style="font-family:cursive">А потом ты провально пишешь Высшую Пробу, сливаешь закл (хотя и провел его в компании прекрасных людей). Думаешь: "Ну МГЛУ так МГЛУ. Буду сдавать базу, а не профильную математику. Всё равно не надо."</p>
+								<p style="font-family:cursive">5 мая, пропустив все сроки, Турнир им. Ломоносва выкладывает дипломы. Ты призер. 100 баллов по профилю в кармане. Считаешь, у тебя 309 баллов на ФиКЛ.</p>
+								<p style="font-family:cursive"><b>Мечта, жди меня.</b></p>
+								</article>
+							  </p>
+							 </details>
+					       </article>
+						   <article>
+						     <h4 style="font-family:cursive"><u>Школа</u></h4>
+							 <details>
+						     <summary><h5 style="font-family:cursive">&#9658;Гимназия №21, г. Электросталь</h5></summary>
+							  <p>
+							   <article>
+							    <p style="font-family:cursive">Здесь я проучилась все 11 лет.</p>
+								<p style="font-family:cursive">У меня был прекрасный дружный класс. Да и учителя были хорошие.)</p>
+								<p style="font-family:cursive">Зовут теперь рассказать детям про олимпиады, лингвистику, поступление, да и вообще чай попить.</p>
+								<p style="font-family:cursive"><b>Найти бы на это время...</b></p>
+								</article>
+							  </p>
+							 </details>
+						   </article>
+						   <article>
+						      <h4 style="font-family:cursive"><u>Что-то кроме школы и вуза</u></h4>
+							  <details>
+							  <summary><h5 style="font-family:cursive">&#9658;ОЦ "Взлёт"</h5></summary>
+							  <p>
+							   <article>
+							    <p style="font-family:cursive">В начале (моей мечты) было слово. Слово это было "Взлёт".</p>
+								<p style="font-family:cursive">В 8 классе, в феврале я приехала на свою первую программу, "Литературное творчетсво".</p>
+								<p style="font-family:cursive">Там была прекрасная лекция А.Ч. Пиперски про НКРЯ (тогда я не очень оценила разговор на 1,5 часа про седьмую воду на киселе).</p>
+								<p style="font-family:cursive">А потом в 9 классе не случилось закла для меня, но случилась программа по Лингвистике. Много знакомых из ФиКЛа, тема будущего исследования, вера в себе и свои силы. Считаю, что тогда я и определила свою цель.</p>
+								<p style="font-family:cursive">С 8 по 11 класс. Множество смен. От обычного участника до резидента. До того, кто теперь ассоциируется с лингвистикой. До сих пор вижу сообщения и отзывы на проведенные клубы по toki pona и созданию конлангов.</p>
+								<p style="font-family:cursive"><b>Навсегда в моем сердце.)</b></p>
+								</article>
+							  </p>
+							  </details>
+						   </article>
+						</p>
+					</details>
 				</div>
 
-				<div class="col-md-6">
-					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
-					</article>
+				<div class="col-md-5">
+					<details>
+						<summary> <h2 style="font-family:cursive"><b> &#10148;Что-то про меня</b></h2> </summary>
+						<p>
+						   <article>
+						   <details>
+						   <summary><h4 style="font-family:cursive">&#9658;Совсем краткая иформация обо мне</h4></summary>
+						     <p>
+							   <article>
+							    <p style="font-family:cursive"><u>Дата рождения</u>: 14.09.2006.</p>
+								<p style="font-family:cursive"><u>Родной город</u>: г. Электросталь, Московская обл.</p>
+								<p style="font-family:cursive"><u>Временно живу в Москве.</u></p>
+								</article>
+							  </p>
+							  </details>
+							<article>
+							<details>
+						    <summary><h4 style="font-family:cursive">&#9658;Какие языки я знаю/учу?</h4></summary>
+							  <p>
+							   <article>
+							    <p style="font-family:cursive"><b>Английский</b> (знаний хватает на чтение грамматик и просмотр фильмов))</p>
+								<p style="font-family:cursive"><b>Испанский</b> (могу понять где-то 50% песни)</p>
+								<p style="font-family:cursive"><b>toki pona</b> (я знаю её на уровне нескольких слов и грамматики, забывается очень быстро.)</p>
+								<p style="font-family:cursive"><b>Арабский</b> (собственно его я и изучаю на ФиКЛе))</p>
+								</article>
+							  </p>
+							 </details>
+							</article>
+							<article>
+							<details>
+						    <summary><h4 style="font-family:cursive">&#9658;Что-то, что мне нравится</h4></summary>
+							  <p>
+							   <article>
+							   <ul>
+							     <li style="font-family:cursive">Сочинять лингвистические задачки</li>
+								 <li style="font-family:cursive">Вязать крючком</li>
+								 <li style="font-family:cursive">Котики</li>
+								 <li style="font-family:cursive">Когда что-то получается</li>
+								 <li style="font-family:cursive">Шутить</li>
+								</ul>
+								</article>
+							  </p>
+							 </details>
+							</article>
+						    </article>
+					    </p>
+					</details>
 				</div>
 
 				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
-<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+				     <details>
+						<summary> <h2 style="font-family:cursive"><b> &#10148;Ссылочки всякие</b></h2> </summary>
+					
 					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
+						<li style="font-family:cursive"><a href="https://vk.com/daiquiribloom">ВКонтакте</a></li>
+						<li style="font-family:cursive"><a href="https://t.me/floral_carp">Телега (лучше пишите сюда)</a></li>
 					</ul>
+					</details>
 				</div>
 			</div>
 		</section>
-
-<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		
+        <section id="likes">
+		<section style="background-color:#e6739e; padding-bottom:10px; ">
+			<div class="container">
+			<h1 style="font-family:cursive"><u>Что-то о моих вкусах (подробнее)</u></h1>
+				<div class="col-md-4">
+				  <details>
+				     <summary><h2 style="font-family:cursive"><b> &#10148;Музыка и кинематограф</b></h2></summary>
+					  <p>
+						<article>
+							<h4 style="font-family:cursive"><u>Музыка</u></h4>
+						<ul>
+					     <li style="font-family:cursive">Панк-рок, рок</li>
+					     <li style="font-family:cursive">Рэп (немного)</li>
+						</ul>
+						    <h4 style="font-family:cursive"><u>Фильмы</u></h4>
+						<ul>
+					     <li style="font-family:cursive">Интерстеллар</li>
+					     <li style="font-family:cursive">Бойцовский клуб</li>
+						 <li style="font-family:cursive">Игра в имитацию</li>
+						 <li style="font-family:cursive">Реальные упыри</li>
+						</ul>
+						     <h4 style="font-family:cursive"><u>Сериалы</u></h4>
+						<ul>
+					     <li style="font-family:cursive">Ганнибал</li>
+					     <li style="font-family:cursive">Теория Большого Взрыва</li>
+						 <li style="font-family:cursive">Офис</li>
+						</ul>
+						</article>
+					  </p>
+					</details>
+				</div>
+				<div class="col-md-4">
+				  <details>
+				     <summary><h2 style="font-family:cursive"><b>&#10148;Книги</b></h2></summary>
+					    <ul>
+					     <li style="font-family:cursive"><u>"Автостопом по галлактике" Дуглас Адамс</u></li>
+						   <p style="font-family:cursive">Одна из любимейших книг! Читается легко, довольно интересная. Каждый из героев по-свомеу хорош. Артур Дент - типичный англичанин, который любит чай, немного неуклюж и боязлив. Форд Префект - смелый работник "Путеводителя для путешествующих автостопом по галактике" и просто хороший друг Артура. Сюрреалистичный сюжет, в котором все герои такие родные и знакомые. Надеюсь, что вам она так же понравится.) </p>
+					     <li style="font-family:cursive"><u>"Да здравствует фикус!" Дж. Оруэлл</u></li>
+						    <p style="font-family:cursive">Я в принципе любительница Оруэлла, но "Да здравствует фикус!" зацепила меня. Книга, кажется, прекрасно всем. Красочные персонажи с не очень простой жизнью. Гордон Комсток - это некоторое олицетворение каждого деятеля гуманитарных наук, который пытается найти свое место в обществе, свой предмет, оставить своё имя в истории. Этот сюжет обычного бытия переплетается с любовной линией, которой всегда есть место в обычной жизни. Однозначно рекомендую. </p>
+						 <li style="font-family:cursive"><u>"Заводной апельсин" Этони Берджесс</u></li>
+						     <p style="font-family:cursive">Хоттейк: Экранизация Кубрика хуже книги. Фильм потерял всю суть книги, весь моральным рост главного героя. Если вам не очень понравился фильм, то дайте шанс книге, особенно оригиналу.) Решение автора добавить свою вариацию сленга вызывает непередаваемый лингвистический восторг.)</p>
+						</ul>
+				  </details>
+				</div>
+				<div class="col-md-4">
+				  <details>
+				      <summary><h2 style="font-family:cursive"><b>&#10148;Мемы</b></h2></summary>
+                      <ul>
+					   <li style="font-family:cursive">Всякие котики.)</li>
+					    <img src="котики.jpg" style="width:250px; height:250px; margin:20px 20px 40px 20px">
+					   <li style="font-family:cursive">Мемы на испанском. Любые.</li>
+					    <img src="buenasnoches.jpg" style="width:250px; height:250px; margin:20px 20px 40px 20px">
+					   <li style="font-family:cursive">Вот этот.</li>
+					    <img src="жук.jpg" style="width:250px; height:250px; margin:20px 20px 40px 20px">
+					  </ul>
+				  </details>
+				</div>
+			</div>
+		</section>
 		<footer class="bs-docs-footer"> 
+		 <footer style="background-color:#8fd6f3; padding-top:40px; padding-bottom:40px; ">
 			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2024</p> 
+			  	<div class="col-md-6">
+			    <details>
+				  <summary style="text-aligned:center;"><h2 style="font-family:cursive"><i>Что-то интересное</i></h2></summary>
+				    <article>
+					 <details>
+					  <summary><h3 style="font-family:cursive"><u>Что-то очень интересное</u></h3></summary>
+					   <article>
+					    <details>
+					     <summary><h4 style="font-family:cursive"><b>Что-то очень-очень интересное</b></h4></summary>
+						  <article>
+					       <details>
+					         <summary><h5 style="font-family:cursive"><u><i>Что-то совсем интересное</i></u></h5></summary>
+                              <article>
+                               <h6 style="font-family:cursive"><u><b><a href="https://clck.ru/3DMswB">Что-то совсем-совсем интересное. Просто вау.</a></b></u></h6>
+					         </article>
+							</details>
+					      </article>
+					    </details>
+					   </article>
+					 </details>
+					</article>
+                   </details>
+				</div>  
+			<div class="col-md-6">
+				<p style="text-align:right; font-family:cursive">&copy; М. Самус, 2024 </p> 
+			</div>
 			</div>
 		</footer>
+      </footer>
+     </section>
 	</body>
 </html>
